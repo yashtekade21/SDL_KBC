@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #343a40;
+    /* Dark background for better contrast */
+    color: #ffffff;
+    /* White text for readability */
+}
+
+.lifeline {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    /* White border for buttons */
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: transparent;
+    /* Transparent background */
+    color: #ffffff;
+    /* White text */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    /* Smooth transitions */
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Light background on hover */
+    color: #ffd700;
+    /* Gold text color on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge button on hover */
+}
+
+.question {
+    font-weight: bold;
+    font-size: 1.5em;
+    /* Increase font size for questions */
+}
+
+.option {
+    margin-top: 5px;
+    cursor: pointer;
+    padding: 5px;
+    /* Add padding for options */
+    border-radius: 5px;
+    /* Rounded corners for options */
+    transition: background-color 0.3s;
+    /* Smooth background color change */
+}
+
+.option:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Light background on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+.used {
+    text-decoration: line-through;
+    background-color: #6c757d;
+    /* Gray background for used lifelines */
+    pointer-events: none;
+    /* Disable further interaction */
+    color: #ffffff;
+    /* White text for used lifelines */
+}
+
+/* Icon styles for lifeline buttons */
+.lifeline-icon {
+    width: 24px;
+    /* Set width for icons */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 8px;
+    /* Space between icon and text */
+}
